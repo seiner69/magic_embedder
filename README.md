@@ -1,6 +1,6 @@
-# magic-embedder
+# axiom-embedder
 
-模块化文本和图像向量化库，专为 RAG 应用设计。
+模块化文本和图像向量化库，专为 Axiom RAG 流水线设计。
 
 ## 功能特性
 
