@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Entry point for magic-embedder.
+"""Entry point for axiom-embedder.
 
 Usage:
     python -m magic_embedder.run --input <path> --strategy <strategy> [options]
@@ -10,8 +10,8 @@ import json
 import sys
 from pathlib import Path
 
-from magic_embedder.core import TextEmbeddingResult
-from magic_embedder.strategies import (
+from axiom_embedder.core import TextEmbeddingResult
+from axiom_embedder.strategies import (
     CLIPImageEmbedder,
     OpenAITextEmbedder,
     SentenceTransformerEmbedder,
@@ -28,7 +28,7 @@ IMAGE_EMBEDDER_MAP = {
 
 
 def main():
-    parser = argparse.ArgumentParser(description="magic-embedder: Text/image embedding tool")
+    parser = argparse.ArgumentParser(description="axiom-embedder: Text/image embedding tool")
     parser.add_argument("--input", "-i", type=Path, required=True, help="Input JSON file")
     parser.add_argument("--output", "-o", type=Path, help="Output JSON file (default: stdout)")
     parser.add_argument(

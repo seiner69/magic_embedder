@@ -21,7 +21,7 @@ pip install sentence-transformers openai torch torchvision Pillow transformers
 ### 文本嵌入
 
 ```python
-from magic_embedder.strategies import SentenceTransformerEmbedder
+from axiom_embedder.strategies import SentenceTransformerEmbedder
 
 embedder = SentenceTransformerEmbedder(model_name="all-MiniLM-L6-v2")
 result = embedder.embed(["Hello world", "这是测试文本"])
@@ -31,7 +31,7 @@ print(f"维度: {result.dimension}, 数量: {len(result.embeddings)}")
 ### 图像嵌入
 
 ```python
-from magic_embedder.strategies import CLIPImageEmbedder
+from axiom_embedder.strategies import CLIPImageEmbedder
 
 embedder = CLIPImageEmbedder(model_name="openai/clip-vit-base-patch32")
 result = embedder.embed_images(["/path/to/image.jpg"])

@@ -1,6 +1,6 @@
 """CLIP image embedding strategy using transformers."""
 
-from magic_embedder.core import BaseImageEmbedder, ImageEmbeddingResult
+from axiom_embedder.core import BaseImageEmbedder, ImageEmbeddingResult
 
 try:
     import torch

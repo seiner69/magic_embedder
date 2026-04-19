@@ -3,7 +3,7 @@
 import os
 from typing import Any
 
-from magic_embedder.core import BaseEmbedder, EmbeddingModelType, TextEmbeddingResult
+from axiom_embedder.core import BaseEmbedder, EmbeddingModelType, TextEmbeddingResult
 
 try:
     from openai import OpenAI
